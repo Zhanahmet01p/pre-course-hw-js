@@ -61,8 +61,6 @@ const users = [
     }
 ];
 
-console.log(users.filter(function(item){
-    if (item.id%2==0){
-        return item
-    }
-}))
+
+const evenIdUsers = users.filter(user => user.id % 2 === 0);
+console.log(evenIdUsers);
